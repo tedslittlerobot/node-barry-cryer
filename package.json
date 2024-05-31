@@ -1,0 +1,47 @@
+{
+  "name": "bruce-banner",
+  "version": "1.0.0",
+  "description": "Node CLI Banner Helpers",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build bin dist",
+    "build": "tsc && ts-rel src build",
+    "test": "npm run clean && npm run build && ava",
+    "lint": "xo",
+    "lint:fix": "xo --fix"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "module": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedslittlerobot/node-bruce-banner.git"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "banner",
+    "text"
+  ],
+  "author": "Stefan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tedslittlerobot/node-bruce-banner/issues"
+  },
+  "homepage": "https://github.com/tedslittlerobot/node-bruce-banner#readme",
+  "devDependencies": {
+    "@tedslittlerobot/ts-relativity": "^1.0.2",
+    "@types/node": "^20.12.13",
+    "ava": "^6.1.3",
+    "typescript": "^5.4.5",
+    "xo": "^0.58.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "strip-ansi": "^7.1.0",
+    "wrap-ansi": "^9.0.0"
+  }
+}
