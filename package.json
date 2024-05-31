@@ -8,7 +8,8 @@
     "build": "tsc && ts-rel src build",
     "test": "npm run clean && npm run build && ava",
     "lint": "xo",
-    "lint:fix": "xo --fix"
+    "lint:fix": "xo --fix",
+    "prepublishOnly": "npm run lint && npm run test"
   },
   "engines": {
     "node": ">=18"
