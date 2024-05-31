@@ -2,7 +2,6 @@
   "name": "barry-cryer",
   "version": "0.0.1",
   "description": "Node CLI Banner Helpers",
-  "main": "index.js",
   "scripts": {
     "clean": "rm -rf build bin dist",
     "build": "tsc && ts-rel src build",
@@ -16,6 +15,7 @@
   },
   "type": "module",
   "module": "build/index.js",
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tedslittlerobot/node-barry-cryer.git"
